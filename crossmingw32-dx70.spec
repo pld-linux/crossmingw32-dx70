@@ -9,6 +9,7 @@ Group:		Development/Libraries
 # headers are Copyright (C) 19xx Microsoft Corporation - what about license???
 # (even if distributable, are they "Free"?!)
 Source0:	http://alleg.sourceforge.net/files/dx70_mgw.zip
+# Source0-md5:	8a57b4c81a296d75f75d7a9810ae59a0
 URL:		http://www.mingw.org/
 ExclusiveArch:	%{ix86}
 Provides:	crossmingw32-w32api-dx
