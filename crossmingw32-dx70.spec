@@ -1,5 +1,5 @@
-Summary:	Mingw32 Binary Utility Development Utilities - DirectX 7.0 API
-Summary(pl):	Zestaw narzêdzi mingw32 - API DirectX 7.0
+Summary:	Mingw32 GNU binary utility development utilities - DirectX 7.0 API
+Summary(pl):	Skro¶ne narzêdzia programistyczne GNU dla Mingw32 - API DirectX 7.0
 Name:		crossmingw32-dx70
 Version:	7.0
 Release:	1
