@@ -13,7 +13,6 @@ Source0:	http://alleg.sourceforge.net/files/dx70_mgw.zip
 Source1:	http://www.libsdl.org/extras/win32/common/directx-devel.tar.gz
 # Source1-md5:	389a36e4d209c0a76bea7d7cb6315315
 URL:		http://www.mingw.org/
-ExclusiveArch:	%{ix86} amd64
 Provides:	crossmingw32-w32api-dx
 Obsoletes:	crossmingw32-w32api-dx
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
