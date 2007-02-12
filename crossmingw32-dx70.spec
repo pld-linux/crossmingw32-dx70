@@ -1,5 +1,5 @@
 Summary:	Mingw32 GNU binary utility development utilities - DirectX 7.0 API
-Summary(pl):	Skro¶ne narzêdzia programistyczne GNU dla Mingw32 - API DirectX 7.0
+Summary(pl.UTF-8):   SkroÅ›ne narzÄ™dzia programistyczne GNU dla Mingw32 - API DirectX 7.0
 Name:		crossmingw32-dx70
 Version:	7.0
 Release:	4
@@ -36,14 +36,14 @@ with supporting Win32 libraries in 'coff' format from free sources.
 
 This package contains DirectX 7.0 API includes and libraries.
 
-%description -l pl
-crossmingw32 jest kompletnym systemem do kompilacji skro¶nej,
-pozwalaj±cym budowaæ aplikacje MS Windows pod Linuksem u¿ywaj±c
-bibliotek mingw32. System sk³ada siê z binutils, gcc z g++ i objc,
-libstdc++ - wszystkie generuj±ce kod dla platformy i386-mingw32, oraz
+%description -l pl.UTF-8
+crossmingw32 jest kompletnym systemem do kompilacji skroÅ›nej,
+pozwalajÄ…cym budowaÄ‡ aplikacje MS Windows pod Linuksem uÅ¼ywajÄ…c
+bibliotek mingw32. System skÅ‚ada siÄ™ z binutils, gcc z g++ i objc,
+libstdc++ - wszystkie generujÄ…ce kod dla platformy i386-mingw32, oraz
 z bibliotek w formacie COFF.
 
-Ten pakiet zawiera pliki nag³ówkowe i biblioteki API DirectX 7.0.
+Ten pakiet zawiera pliki nagÅ‚Ã³wkowe i biblioteki API DirectX 7.0.
 
 %prep
 %setup -q -c
