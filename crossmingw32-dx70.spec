@@ -15,8 +15,8 @@ Source1:	http://www.libsdl.org/extras/win32/common/directx-devel.tar.gz
 URL:		http://www.mingw.org/
 BuildRequires:	unzip
 Requires:	crossmingw32-runtime
-Provides:	crossmingw32-w32api-dx
-Obsoletes:	crossmingw32-w32api-dx
+Provides:	crossmingw32-dx = 7.0
+Obsoletes:	crossmingw32-dx
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %define		target		i386-mingw32
@@ -57,6 +57,7 @@ install -d $RPM_BUILD_ROOT%{arch}/{include,lib}
 
 mv -f lib/src/*.htm .
 rm -rf lib/src
+rm -rf include/src
 
 cp -fa include/* $RPM_BUILD_ROOT%{arch}/include
 cp -fa lib/* $RPM_BUILD_ROOT%{arch}/lib
@@ -69,5 +70,34 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc directx.htm
-%{arch}/include/*
-%{arch}/lib/*
+%{arch}/include/d3d*.h
+%{arch}/include/d3d*.inl
+%{arch}/include/ddraw.h
+%{arch}/include/dinput*.h
+%{arch}/include/dls1.h
+%{arch}/include/dls2.h
+%{arch}/include/dmdls.h
+%{arch}/include/dmerror.h
+%{arch}/include/dmksctrl.h
+%{arch}/include/dmus*.h
+%{arch}/include/dplay.h
+%{arch}/include/dplobby.h
+%{arch}/include/directx.h
+%{arch}/include/dsetup.h
+%{arch}/include/dsound.h
+%{arch}/include/dvp.h
+%{arch}/include/dxfile.h
+%{arch}/include/dxsdk.inc
+%{arch}/include/multimon.h
+%{arch}/include/rmxfguid.h
+%{arch}/include/rmxftmpl.h
+%{arch}/include/rmxftmpl.x
+%{arch}/lib/libd3dim.a
+%{arch}/lib/libd3drm.a
+%{arch}/lib/libd3dxof.a
+%{arch}/lib/libddraw.a
+%{arch}/lib/libdinput.a
+%{arch}/lib/libdplayx.a
+%{arch}/lib/libdsetup.a
+%{arch}/lib/libdsound.a
+%{arch}/lib/libdxguid.a
